@@ -1,0 +1,25 @@
+server:
+  port: 8580
+# 默认的数据库名
+database:
+  name: deer
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/deer?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 858414
+
+# springboot 2.5+ 版本使用下面这个
+#  sql:
+#    init:
+#      mode: always
+#      data-location: classpath:config-data.sql
+#      schema-location: classpath:init-schema.sql
+logging:
+  level:
+    root: info
+    org:
+      springframework:
+        jdbc:
+          core: debug
