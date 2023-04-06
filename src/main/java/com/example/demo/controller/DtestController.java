@@ -22,4 +22,17 @@ public class DtestController extends BaseController {
         List<Suer> add = iSuerService.add();
         System.out.println(add);
     }
-}
+
+
+
+
+//    public void ds(@RequestParam("userId") String userId){
+//
+//    }
+
+
+//    public void ds(@RequestBody BpBankCard bpBankCard){
+//
+//    }
+
+    }

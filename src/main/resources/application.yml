@@ -10,16 +10,10 @@ spring:
     username: root
     password: 858414
 
-# springboot 2.5+ 版本使用下面这个
-#  sql:
-#    init:
-#      mode: always
-#      data-location: classpath:config-data.sql
-#      schema-location: classpath:init-schema.sql
-logging:
-  level:
-    root: info
-    org:
-      springframework:
-        jdbc:
-          core: debug
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+  mapper-locations: classpath:mapper/mysql/deer/*.xml
+
+#shiro:
+#  loginUrl:deerLogin/login

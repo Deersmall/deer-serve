@@ -5,6 +5,7 @@ import com.example.demo.entity.Suer;
 
 import java.util.List;
 
+
 public interface ISuerService extends IService<Suer> {
     List<Suer> add();
 }
