@@ -10,10 +10,16 @@ spring:
     username: root
     password: 858414
 
+  redis:
+    database: 1
+    password:
+    host: 127.0.0.1
+    port: 6379
+
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
   mapper-locations: classpath:mapper/mysql/deer/*.xml
 
 #shiro:
-#  loginUrl:deerLogin/login
+#  loginUrl:deerLogin/login.vue
