@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.deer.dao.RankMapper">
+
+
+    <select id="queryRanks" resultType="com.example.deer.entity.surf.Users">
+        SELECT auth,`name`,lastlogin,points,playtime FROM ${surfServer}.`users`
+            ${ew.getCustomSqlSegment}
+        ORDER BY points DESC
+
+    </select>
+
+</mapper>
